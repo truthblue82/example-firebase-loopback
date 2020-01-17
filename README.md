@@ -7,9 +7,11 @@ An example about pushing notification for devices.
 - Build API service by loopback 3.x
 - Using mongodb for storing.
 - Using npm packages here: 
-      - fcm-node: https://github.com/jlcvp/fcm-node
-      - loopback-connector-mongodb
-      - asyncawait
+
+- fcm-node: https://github.com/jlcvp/fcm-node
+- loopback-connector-mongodb
+- asyncawait
+
 - Apply firebase to push notification for devices
 
 ## Detail & testing
