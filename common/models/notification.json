@@ -1,0 +1,75 @@
+{
+  "name": "notification",
+  "plural": "notifications",
+  "base": "PersistedModel",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "appId": {
+      "type": "string",
+      "required": true
+    },
+    "userIds": {
+      "type": [
+        "string"
+      ]
+    },
+    "platform": {
+      "type": "number",
+      "required": true,
+      "default": 0
+    },
+    "pushDate": {
+      "type": "date",
+      "required": true
+    },
+    "title": {
+      "type": "string"
+    },
+    "message": {
+      "type": "string",
+      "required": true
+    },
+    "soundName": {
+      "type": "string"
+    },
+    "global": {
+      "type": "boolean",
+      "required": true,
+      "default": false
+    },
+    "deeplink": {
+      "type": "string"
+    },
+    "priority": {
+      "type": "string",
+      "required": true,
+      "default": "HIGH"
+    },
+    "segment": {
+      "type": "object"
+    },
+    "status": {
+      "type": "number",
+      "default": 0
+    },
+    "process": {
+      "type": "number",
+      "default": 0
+    },
+    "success": {
+      "type": "number",
+      "default": 0
+    },
+    "fail": {
+      "type": "number",
+      "default": 0
+    }
+  },
+  "validations": [],
+  "relations": {},
+  "acls": [],
+  "methods": {}
+}

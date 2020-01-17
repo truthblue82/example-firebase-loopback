@@ -14,25 +14,46 @@
     ]
   },
   "User": {
-    "dataSource": "db"
+    "dataSource": "notiDB",
+    "public": false
   },
   "AccessToken": {
-    "dataSource": "db",
+    "dataSource": "notiDB",
     "public": false
   },
   "ACL": {
-    "dataSource": "db",
+    "dataSource": "notiDB",
     "public": false
   },
   "RoleMapping": {
-    "dataSource": "db",
+    "dataSource": "notiDB",
     "public": false,
     "options": {
       "strictObjectIDCoercion": true
     }
   },
   "Role": {
-    "dataSource": "db",
+    "dataSource": "notiDB",
     "public": false
+  },
+  "application": {
+    "dataSource": "notiDB",
+    "public": true
+  },
+  "device": {
+    "dataSource": "notiDB",
+    "public": true
+  },
+  "notification": {
+    "dataSource": "notiDB",
+    "public": true,
+    "options": {
+      "remoting": {
+        "sharedMethods": {
+          "*": false,
+          "pushNotifies": true
+        }
+      }
+    }
   }
 }

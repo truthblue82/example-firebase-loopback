@@ -1,0 +1,49 @@
+{
+  "name": "device",
+  "plural": "devices",
+  "base": "PersistedModel",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "appId": {
+      "type": "string",
+      "required": true
+    },
+    "userId": {
+      "type": "string",
+      "required": true
+    },
+    "deviceToken": {
+      "type": "string",
+      "required": true
+    },
+    "deviceName": {
+      "type": "string",
+      "required": true
+    },
+    "deviceType": {
+      "type": "number",
+      "required": true,
+      "default": 0
+    },
+    "timezone": {
+      "type": "number",
+      "required": true,
+      "default": -420
+    },
+    "isNotify": {
+      "type": "boolean",
+      "required": true,
+      "default": true
+    },
+    "lastOnline": {
+      "type": "date"
+    }
+  },
+  "validations": [],
+  "relations": {},
+  "acls": [],
+  "methods": {}
+}
