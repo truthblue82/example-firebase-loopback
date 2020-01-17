@@ -1,6 +1,8 @@
 {
-  "db": {
-    "name": "db",
-    "connector": "memory"
+  "notiDB": {
+    "url": "mongodb://localhost:27017/notiDB",
+    "name": "notiDB",
+    "useNewUrlParser": true,
+    "connector": "mongodb"
   }
 }
